@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey-form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container p-4">
+        <form>
+      <div class="row">
+        <h6>Name</h6><br />
+
+        <div class="col">
+          <input type="text" id="firstname" name="firstname" />
+        </div>
+        <div class="col">
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><label for="firstname">First</label></div>
+        <div class="col"><label for="lastname">Last</label></div>
+      </div>
+      <div class="row">
+        <label for="Email"><h6>Email*</h6></label><br>
+        <div class="col">
+            <input type="email" name="Email" id="Email">
+        </div>
+      </div>
+      <div class="row">
+        <h6>Your Experience*</h6>
+         <div class="rating">
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">&#9733;</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">&#9733;</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">&#9733;</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">&#9733;</label>
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">&#9733;</label>
+    <p class="expText">Overall,how would you rate your experience with us?</p>
+      </div>
+      <div class="row table-responsive">
+        <h6>How satisfied are you with*</h6>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">very Unsatisfied</th>
+      <th scope="col">Unsatisfied</th>
+      <th scope="col">Netural</th>
+      <th scope="col">Satisfied</th>
+      <th scope="col">Very satisfied</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-secondary">
+      <td scope="row">Purchase</td>
+      <td><input type="radio" id="op1" name="purchase" value="Veryunsatisfied">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="purchase" value="unsatisfied">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="purchase" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="purchase" value="satisfied">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="purchase" value="Verysatisfied">
+    <label for="op1"></td>
+    </tr>
+    <tr>
+      <td scope="row">Service</td>
+      <td><input type="radio" id="op1" name="Service" value="Veryunsatisfied">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="Service" value="unsatisfied">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="Service" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Service" value="satisfied">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Service" value="Verysatisfied">
+    <label for="op1"></td>
+    </tr>
+    <tr class="table-secondary">
+      <td scope="row">Company overall</td>
+     <td><input type="radio" id="op1" name="Company overall" value="Veryunsatisfied">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="Company overall" value="unsatisfied">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="Company overall" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Company overall" value="satisfied">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Company overall" value="Verysatisfied">
+    <label for="op1"></td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      <div class="row text-wrap">
+        <h6>How likely are you to*</h6>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">very Unlikely</th>
+      <th scope="col">Unlikely</th>
+      <th scope="col">Netural</th>
+      <th scope="col">likely</th>
+      <th scope="col">Very likely</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-secondary">
+      <td scope="row">Buy from us again</td>
+      <td><input type="radio" id="op1" name="Buyfromusagain" value="Very Unlikely">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="Buyfromusagain" value="Unlikely">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="Buyfromusagain" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Buyfromusagain" value="likely">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Buyfromusagain" value="Very likely">
+    <label for="op1"></td>
+    </tr>
+    <tr>
+      <td scope="row">Recommended our products to others</td>
+      <td><input type="radio" id="op1" name="Recommended our products to others" value="Very Unlikely">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="Recommended our products to others" value="Unlikely">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="Recommended our products to others" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Recommended our products to others" value="likely">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Recommended our products to others" value="Very likely">
+    <label for="op1"></td>
+    </tr>
+    <tr class="table-secondary">
+      <td scope="row">Recommended our Company to others</td>
+     <td><input type="radio" id="op1" name="Recommended our Company to others" value="Very Unlikely">
+    <label for="op1"></label></td>
+      <td><input type="radio" id="op1" name="Recommended our Company to others" value="Unlikely">
+    <label for="op1"></td>
+      <td><input type="radio" id="op1" name="Recommended our Company to others" value="Netural>
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Recommended our Company to others" value="likely">
+    <label for="op1"></td>
+        <td><input type="radio" id="op1" name="Recommended our Company to others" value="Very likely">
+    <label for="op1"></td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      <h6>Additional Comments or suggestions</h6>
+       <textarea id="myTextArea" name="comments" rows="4" cols="20">
+        
+    </textarea> 
+
+     </form>
+    </div>
+<br>
+   <input type="submit" value="Submit">
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

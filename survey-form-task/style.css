@@ -1,0 +1,20 @@
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color:coral;
+}
+.expText{
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+}
+.container{
+    border: 1px solid black;
+}
